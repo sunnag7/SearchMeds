@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="info.androidhive.materialdesign.activity.MyOrders">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Payment Request"
+                android:id="@+id/txtV_paymentRequest"
+                android:textColor="@color/billtextCol"
+                android:textAppearance="?android:attr/textAppearanceSmall"/>
+
+            <TextView
+                android:id="@+id/TxtV_OrderNo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Order Number"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:layout_marginTop="5dp"
+                android:layout_below="@+id/txtV_paymentRequest"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Date"
+                android:textColor="@color/billtextCol"
+                android:id="@+id/txtV_date"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+            <TextView
+                android:id="@+id/TxtV_OrderDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="02 Feb 2016"
+                android:textSize="16dp"
+                android:layout_alignTop="@+id/TxtV_OrderNo"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Amount"
+                android:id="@+id/txtV_titleAmount"
+                android:layout_below="@+id/TxtV_OrderNo"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/billtextCol"
+                android:textAppearance="?android:attr/textAppearanceSmall"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Del. Charges"
+                android:textColor="@color/billtextCol"
+                android:id="@+id/txtV_titleDelCharges"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:layout_alignBaseline="@+id/txtV_titleTotalAmount"
+                android:layout_alignBottom="@+id/txtV_titleTotalAmount"
+                android:layout_toLeftOf="@+id/txtV_titleTotalAmount"
+                android:layout_toStartOf="@+id/txtV_titleTotalAmount"
+                android:layout_marginRight="18dp"
+                android:layout_marginEnd="18dp" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total Amount"
+                android:textColor="@color/billtextCol"
+                android:id="@+id/txtV_titleTotalAmount"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:layout_above="@+id/TxtV_OrderAmount"
+                android:layout_alignRight="@+id/rel_trackingStatus"
+                android:layout_alignEnd="@+id/rel_trackingStatus" />
+
+            <TextView
+                android:id="@+id/TxtV_BillAmount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="500"
+                android:textSize="16dp"
+                android:layout_alignTop="@+id/TxtV_DeliveryCharges"
+                android:layout_alignLeft="@+id/rel_trackingStatus"
+                android:layout_alignStart="@+id/rel_trackingStatus" />
+
+            <TextView
+                android:id="@+id/TxtV_DeliveryCharges"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="30"
+                android:textSize="16dp"
+                android:layout_below="@+id/txtV_titleAmount"
+                android:layout_alignLeft="@+id/txtV_titleDelCharges"
+                android:layout_alignStart="@+id/txtV_titleDelCharges" />
+
+            <TextView
+                android:id="@+id/TxtV_OrderAmount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="530"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:textColor="@color/textColor"
+                android:layout_below="@+id/txtV_titleAmount"
+                android:layout_alignLeft="@+id/TxtV_OrderDate"
+                android:layout_alignStart="@+id/TxtV_OrderDate" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:layout_marginLeft="3dp"
+                android:layout_marginBottom="3dp"
+                android:layout_marginRight="3dp"
+                android:visibility="invisible"
+                android:id="@+id/rel_trackingStatus_cancelled"
+                android:layout_below="@+id/TxtV_BillAmount">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ORDER  CANCELLED"
+                    android:textStyle="bold"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="@color/red"
+                    android:id="@+id/textView_cancelled"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="10dp"
+                    android:layout_centerInParent="true"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:layout_marginLeft="3dp"
+                android:layout_marginBottom="3dp"
+                android:layout_marginRight="3dp"
+                android:id="@+id/rel_trackingStatus"
+                android:layout_below="@+id/TxtV_BillAmount">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Processing"
+                    android:textStyle="bold"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/colorPrimary"
+                    android:id="@+id/textView3"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/imageV_processing"
+                    android:src="@drawable/processing"
+                    android:layout_below="@+id/textView3"
+                    android:layout_alignRight="@+id/textView3"
+                    android:layout_alignEnd="@+id/textView3"
+                    android:layout_marginRight="26dp"
+                    android:layout_marginEnd="26dp"/>
+                <!--android:src="@drawable/processing"-->
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/out_for_delivery"
+                    android:id="@+id/imageV_outFordelivery"
+                    android:layout_below="@+id/textView17"
+                    android:layout_alignLeft="@+id/textView17"
+                    android:layout_alignStart="@+id/textView17"
+                    android:layout_marginLeft="36dp"
+                    android:layout_marginStart="36dp" />
+               <!-- android:src="@drawable/out_for_delivery"-->
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Out for Delivery"
+                    android:textStyle="bold"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/colorPrimary"
+                    android:id="@+id/textView17"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignLeft="@+id/textView3"
+                    android:layout_toRightOf="@+id/textView3"
+                    android:layout_toEndOf="@+id/textView3"
+                    android:layout_marginLeft="84dp"
+                    android:layout_marginStart="24dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Delivered"
+                    android:textStyle="bold"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/colorPrimary"
+                    android:id="@+id/textView12"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/delivered"
+                    android:id="@+id/imageV_delivered"
+                    android:layout_below="@+id/textView12"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true" />
+
+                <!--android:src="@drawable/delivered"-->
+
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_star_black_24dp"
+                android:layout_below="@+id/rel_trackingStatus"
+                android:id="@+id/imageV_venderType" />
+
+            <TextView
+                android:id="@+id/TxtV_VendorName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kind Medical Stores"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:textColor="@color/textColor"
+                android:layout_marginLeft="5dp"
+                android:layout_alignBottom="@+id/imageV_venderType"
+                android:layout_toRightOf="@+id/TxtV_BillAmount"
+                android:layout_toEndOf="@+id/TxtV_BillAmount" />
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

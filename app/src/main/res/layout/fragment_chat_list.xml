@@ -1,0 +1,93 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/rel_layout_Fragment_chat_List"
+    android:background="@color/windowBackground">
+
+
+
+  <!--      <android.support.v7.widget.CardView
+            android:id="@+id/Card_Customer_SupportChat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/Rel_CustomerSupport"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            &lt;!&ndash;Customer Care&ndash;&gt;
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:padding="5dp"
+                android:id="@+id/ImgV_customerCare"
+                android:src="@drawable/customer_service"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Customer Care"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:padding="5dp"
+                android:id="@+id/TxtV_CustCare"
+                android:textColor="@color/textColor"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="78dp"
+                android:layout_marginStart="78dp" />
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>-->
+
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/chat_listView"
+        android:padding="5dp"
+        android:layout_below="@+id/Card_Customer_SupportChat"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:divider="@color/dividerCol"/>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/relativeLayout1"
+        android:visibility="invisible"
+        android:layout_alignTop="@+id/chat_listView">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/oops"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="174dp"
+            android:id="@+id/imageView6" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No Chats available..."
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textStyle="bold"
+            android:padding="10dp"
+            android:textColor="@color/colorPrimary"
+            android:gravity="center_horizontal"
+            android:layout_below="@+id/imageView6"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"/>
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

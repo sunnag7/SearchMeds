@@ -1,0 +1,57 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="etechserv.com.eshopvender.PendingDeliveryFragment">
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/swipeContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+<!--<com.baoyz.widget.PullRefreshLayout
+    android:id="@+id/swipeRefreshLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">-->
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_viewMyOrders"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true" />
+
+        </android.support.v4.widget.SwipeRefreshLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/rel_noOrders"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageV_noorders"
+            android:src="@drawable/orders"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="217dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No Orders !"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:id="@+id/txtV_noNotification"
+            android:textColor="@color/billNo"
+            android:layout_marginTop="15dp"
+            android:layout_below="@+id/imageV_noorders"
+            android:layout_centerHorizontal="true" />
+
+    </RelativeLayout>
+    </FrameLayout>
+
+
+<!--</com.baoyz.widget.PullRefreshLayout>-->

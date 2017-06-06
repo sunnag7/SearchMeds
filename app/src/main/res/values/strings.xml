@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">searchMeds</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_search">Search</string>
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
+    <string name="nav_item_home">Search</string>
+    <!--Dashboard-->
+    <string name="nav_item_friends">My Account</string>
+    <string name="nav_item_notifications">My Orders</string>
+
+    <!-- navigation drawer item labels -->
+    <string-array name="nav_drawer_labels">
+        <item>@string/nav_item_home</item>
+        <item>@string/nav_item_friends</item>
+        <item>@string/nav_item_notifications</item>
+        <item>My Chats</item>
+        <item>My Favorites</item>
+        <item>Exit</item>
+        <item>Logout</item>
+    </string-array>
+
+    <string name="title_messages">Favourites</string>
+    <string name="myorders">My Orders</string>
+    <string name="title_friends">Friends</string>
+    <string name="title_home">SearchMeds</string>
+    <string name="title_activity_register">Register</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_notify">NotifyActivity</string>
+    <string name="title_activity_chat_">Chat</string>
+    <string name="title_activity_order__options_">Order Options</string>
+    <string name="title_activity_prescription__upload">Upload Prescription</string>
+    <string name="title_activity_my_orders">MyOrders</string>
+    <string name="title_activity_prachi">PrachiActivity</string>
+    <string name="title_activity_upload_prescription">Upload Prescription</string>
+    <string name="title_activity_tutorial">Tutorial</string>
+
+</resources>

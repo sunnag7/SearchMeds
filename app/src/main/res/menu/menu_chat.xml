@@ -1,0 +1,40 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".activity.ChatActivity">
+    <!--
+        <item
+            android:id="@+id/action_uploadPrescription"
+            android:title="Upload Prescription"
+            android:icon="@drawable/upldprescription"
+            />
+
+        <item
+            android:id="@+id/action_sync"
+            android:icon="@drawable/sync"
+            android:title=""
+            />-->
+
+    <group>
+    <item
+        android:id="@+id/action_uploadPrescription"
+        android:icon="@drawable/upldprescription"
+        android:title="Upload Prescription"
+        android:orderInCategory="1"
+       />
+
+    <item
+        android:id="@+id/action_sync"
+        android:title="Sync Chats"
+        android:icon="@drawable/sync"
+        android:orderInCategory="2"
+       />
+
+    <item android:id="@+id/action_ShareAddress"
+        android:title="Share Address"
+        android:icon="@drawable/gps_logo"
+        android:orderInCategory="3"
+        />
+    </group>
+
+
+</menu>

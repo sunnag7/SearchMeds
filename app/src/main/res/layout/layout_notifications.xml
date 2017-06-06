@@ -1,0 +1,118 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/notificationCard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        card_view:cardCornerRadius="3dp"
+        android:layout_marginTop="5dp"
+        card_view:cardElevation="1dp"
+        android:background="@color/textColorPrimary">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/venCard"
+            android:padding="10dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/notif"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:id="@+id/imageView9"
+                android:layout_alignTop="@+id/txtV_Date"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Date :"
+                android:id="@+id/txtV_Date"
+                android:padding="5dp"
+                android:textColor="@color/textColor"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/imageView9"
+                android:layout_toEndOf="@+id/imageView9"
+                android:layout_marginLeft="24dp"
+                android:layout_marginStart="24dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="16-03-2016"
+                android:id="@+id/txtV_notificationDate"
+                android:padding="5dp"
+                android:textColor="@color/textColor"
+                android:layout_alignTop="@+id/txtV_Date"
+                android:layout_alignRight="@+id/relativeLayout3"
+                android:layout_alignEnd="@+id/relativeLayout3"
+                android:layout_toRightOf="@+id/txtV_time"
+                android:layout_toEndOf="@+id/txtV_time" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Time :"
+                android:id="@+id/txtV_time"
+                android:padding="5dp"
+                android:textColor="@color/textColor"
+                android:layout_below="@+id/txtV_Date"
+                android:layout_alignLeft="@+id/txtV_Date"
+                android:layout_alignStart="@+id/txtV_Date" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="10.30 AM"
+                android:padding="5dp"
+                android:id="@+id/txtV_notificationTime"
+                android:textColor="@color/textColor"
+                android:layout_alignTop="@+id/txtV_time"
+                android:layout_toRightOf="@+id/txtV_time"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imageView9"
+                android:padding="5dp"
+                android:id="@+id/relativeLayout3">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Vendor Name"
+                    android:padding="5dp"
+                    android:textColor="@color/billNo"
+                    android:textStyle="bold"
+                    android:id="@+id/txtV_NotificationVendorName"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="NOTIFICATIONS"
+                    android:textSize="17dp"
+                    android:padding="8dp"
+                    android:layout_below="@+id/txtV_NotificationVendorName"
+                    android:id="@+id/txtV_notificationsMesg"
+                    android:textColor="@color/notificationTxt"/>
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

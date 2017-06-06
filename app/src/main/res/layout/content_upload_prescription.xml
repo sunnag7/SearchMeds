@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="info.androidhive.materialdesign.activity.UploadPrescriptionActivity"
+    tools:showIn="@layout/activity_upload_prescription">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/Txt_Options"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:text="Choose Prescription:"
+                android:textSize="20dp"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:typeface="monospace" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/lin_layOptions"
+                android:orientation="horizontal"
+                android:layout_below="@+id/Txt_Options"
+                android:padding="5dp">
+
+                <TextView
+                    android:id="@+id/TxtV_fromgallery"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="From Gallery"
+                    android:layout_marginLeft="25dp"/>
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/gallery_image"
+                    android:layout_marginTop="15dp"
+                    android:layout_below="@+id/TxtV_fromgallery"
+                    android:layout_marginBottom="20dp"
+                    android:id="@+id/imageV_choosePrescription_gallery"
+                    android:layout_marginLeft="15dp"/>
+
+                <TextView
+                    android:id="@+id/TxtV_fromcamera"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="From Camera"
+                    android:layout_marginRight="25dp"
+                    android:layout_alignParentRight="true"/>
+
+                <ImageView
+                    android:id="@+id/imageV_choosePrescription_camera"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_alignBaseline="@+id/imageV_choosePrescription_gallery"
+                    android:src="@drawable/camera"
+                    android:layout_marginRight="15dp"
+                    android:layout_below="@+id/TxtV_fromcamera"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="20dp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/rel_choosePrescription"
+                android:layout_below="@+id/lin_layOptions">
+
+                <ImageView
+                    android:id="@+id/img_display_presc"
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:maxWidth="400dp"
+                    android:maxHeight="400dp"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true" />
+
+            </RelativeLayout>
+
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/btn_Cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:backgroundTint="@color/colorPrimary"
+                android:src="@drawable/close"
+                android:textSize="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_alignLeft="@+id/Txt_Options"
+                android:layout_alignStart="@+id/Txt_Options"
+                android:layout_below="@+id/rel_choosePrescription"/>
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/btn_upload"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:backgroundTint="@color/colorPrimary"
+                android:src="@drawable/upload"
+                android:textSize="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_alignBottom="@+id/btn_Cancel"
+                android:layout_alignRight="@+id/Txt_Options"
+                android:layout_alignEnd="@+id/Txt_Options"/>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

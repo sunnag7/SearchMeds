@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="#FFFFFF"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/profile_Back"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:background="@drawable/background_profile">
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:id="@+id/ImgV_Profile"
+                android:layout_gravity="center_horizontal"
+                android:adjustViewBounds="true"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true" />
+
+        </RelativeLayout>
+
+    <View
+        android:layout_below="@+id/profile_Back"
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:background="#c0c0c0"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/profile_Back"
+            android:layout_centerHorizontal="true">
+
+
+            <TextView
+                android:layout_width="270dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/TxtV_UserName"
+                android:layout_marginTop="20dp"
+                android:minHeight="40dp"
+                android:inputType="textPersonName"
+                android:hint="Name"
+                android:textStyle="bold"
+                android:layout_centerHorizontal="true"
+                android:gravity="center" />
+
+
+            <android.support.v7.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                card_view:cardCornerRadius="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:paddingBottom="10dp"
+                android:background="#7f8c8d"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/TxtV_UserName"
+                android:id="@+id/view2">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/TxtV_Details"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Details: "
+                        android:textSize="20dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:textStyle="bold"
+                        android:paddingBottom="5dp"
+                        android:layout_marginBottom="5dp"/>
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/TxtV_CityName"
+                        android:layout_below="@+id/TxtV_Details"
+                        android:minHeight="40dp"
+                        android:layout_marginTop="10dp"
+                        android:textStyle="bold"
+                        android:hint="City"
+                        android:gravity="center" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/TxtV_UserMobile"
+                        android:minHeight="40dp"
+                        android:hint="Mobile Number"
+                        android:layout_below="@+id/TxtV_CityName"
+                        android:inputType="phone"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:layout_centerHorizontal="true" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/TxtV_UserEmail"
+                        android:layout_below="@+id/TxtV_UserMobile"
+                        android:minHeight="40dp"
+                        android:hint="Email"
+                        android:textStyle="bold"
+                        android:inputType="textEmailAddress"
+                        android:gravity="center" />
+
+                </RelativeLayout>
+
+
+            </android.support.v7.widget.CardView>
+
+
+
+        </RelativeLayout>
+
+
+</RelativeLayout>

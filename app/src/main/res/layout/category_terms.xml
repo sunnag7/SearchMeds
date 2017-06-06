@@ -1,0 +1,169 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:background="@color/windowBackground"
+    android:gravity="center">
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/textView11"
+        android:textColor="@color/textColor"
+        android:padding="5dp"
+        android:gravity="center"
+        android:src="@drawable/logo"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/TextV_TandC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Agree Terms and Conditions"
+        android:textSize="20dp"
+        android:padding="5dp"
+        android:textColor="@color/textColor"
+        android:layout_below="@+id/textView11"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="  Privacy Policy"
+        android:drawableLeft="@drawable/ic_star_black_24dp"
+        android:id="@+id/textView13"
+        android:gravity="center"
+        android:textColor="@color/textColor"
+        android:layout_below="@+id/TextV_TandC"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textStyle="bold"
+        android:textSize="13dp"
+        android:padding="5dp"
+        android:layout_marginLeft="12dp"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imgV_privacy"
+        android:layout_alignBottom="@+id/textView13"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/a"
+        android:padding="7dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="  Refund Policy"
+        android:id="@+id/textView14"
+        android:drawableLeft="@drawable/ic_star_black_24dp"
+        android:layout_below="@+id/imgV_privacy"
+        android:textStyle="bold"
+        android:textSize="13dp"
+        android:textColor="@color/textColor"
+        android:padding="5dp"
+        android:layout_marginLeft="12dp"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imgV_refund"
+        android:layout_alignBottom="@+id/textView14"
+        android:src="@drawable/a"
+        android:padding="7dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="  Ship and Delivery Policy"
+        android:id="@+id/textView15"
+        android:drawableLeft="@drawable/ic_star_black_24dp"
+        android:layout_below="@+id/imgV_refund"
+        android:textStyle="bold"
+        android:textSize="13dp"
+        android:textColor="@color/textColor"
+        android:padding="5dp"
+        android:layout_marginLeft="12dp"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imgV_shipndelivery"
+        android:layout_below="@+id/imgV_refund"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/a"
+        android:padding="7dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="  Terms and Conditions"
+        android:id="@+id/textView16"
+        android:layout_below="@+id/textView15"
+        android:textStyle="bold"
+        android:drawableLeft="@drawable/ic_star_black_24dp"
+        android:textSize="13dp"
+        android:textColor="@color/textColor"
+        android:padding="5dp"
+        android:layout_marginLeft="12dp"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imgV_terms"
+        android:src="@drawable/a"
+        android:padding="7dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/textView16"
+        android:layout_alignLeft="@+id/imageView8"
+        android:layout_alignStart="@+id/imageView8" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center|top"
+        android:layout_below="@+id/textView16"
+        android:layout_centerHorizontal="true">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ACCEPT"
+            android:id="@+id/acept_button"
+            android:layout_below="@+id/relativeLayout"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:padding="10dp"
+            android:textStyle="bold"
+            android:background="@color/colorPrimary"
+            android:textColor="#ffffff" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DECLINE"
+            android:id="@+id/rejct_button"
+            android:layout_below="@+id/relativeLayout"
+            android:layout_centerHorizontal="true"
+            android:padding="10dp"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:background="@color/colorPrimary"
+            android:textColor="#ffffff" />
+    </LinearLayout>
+
+
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="black">#000</color>
+    <color name="orange">#B93221</color>
+    <color name="white">#FFF</color>
+    <color name="white_">#FFFFFF</color>
+
+    <!--<color name="colorPrimary">#FA0</color>
+    <color name="colorprimarylight">#f5bd4c</color>-->
+    <color name="colorPrimary">#B93221</color>
+    <color name="colorprimarylight">#DA4336</color>
+    <color name="colorPrimaryDark">#DA4336</color>
+
+    <!--<color name="colorPrimaryDark">#FA0</color>-->
+    <color name="textColorPrimary">#FFFFFF</color>
+    <color name="windowBackground">#FFFFFF</color>
+    <color name="navigationBarColor">#000000</color>
+    <color name="colorAccent">#FF80AB</color>
+    <color name="textColor">#555555</color>
+    <color name="textBackground">#40FFFFFF</color>
+    <color name="dividerCol">#ffc9c9c9</color>
+    <color name="colorBtn">#FA0</color>
+
+    <color name="grey">#E5E5EA</color>
+    <color name="mesgBack">#fe9f81</color>
+    <color name="red">#fa0606</color>
+
+    <color name="billNo">#747474</color>
+    <color name="billtextCol">#bebebe</color>
+
+    <color name="notificationTxt">#665C66</color>
+    <color name="notificationLightText">#9C8F9C</color>
+
+
+
+
+</resources>
